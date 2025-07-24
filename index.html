@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerShop - Always Fresh Flowers</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+ 
+</head>
+<body class="font-sans" style="background: rgb(245, 248, 255);"  >
+    <!-- Navbar -->
+    <nav class="bg-white  sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="bg-gradient-to-r from-pink-500 to-orange-500 p-2 rounded-full mr-3">
+                        <i class="fas fa-seedling text-white text-lg"></i>
+                    </div>
+                    <img src="assets/logo.png" class="w-24" alt="">
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-pink-500 transition font-medium">Home</a>
+                    <a href="#" class="text-gray-400 hover:text-pink-500 transition font-medium">Shop</a>
+                    <a href="#" class="text-gray-400 hover:text-pink-500 transition font-medium">About us</a>
+                    <a href="#" class="text-gray-400 hover:text-pink-500 transition font-medium">Contact</a>
+                    <div class="flex items-center text-gray-800  px-6 py-2 rounded-full hover:shadow-lg transition cursor-pointer">
+                        <i class="fas fa-shopping-cart mr-2"></i>
+                        <span class=" font-sans font-medium text-[22px]">Cart ($56)</span>
+                    </div>
+                </div>
+                
+                <!-- Mobile Cart -->
+                <div class="md:hidden flex items-center bg-gradient-to-r from-pink-500 to-orange-500 text-white px-4 py-2 rounded-full shadow-md">
+                    <i class="fas fa-shopping-cart mr-2"></i>
+                    <span class="text-sm font-medium">Cart</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="hero-bg py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center">
+                <!-- Content - Mobile: After image, Desktop: Left -->
+                <div class="w-full lg:w-1/2 text-center lg:text-left order-2 lg:order-1 fade-in-up">
+                    <h1 class="text-5xl lg:text-7xl font-bold text-gray-800 mb-6 leading-tight">
+                        ALWAYS <span class="my-orange">FRESH</span><br>
+                        <span class=" my-orange">FLOWERS</span>
+                    </h1>
+                    <p class="text-gray-600  text-xl mb-8 max-w-md mx-auto lg:mx-0 leading-relaxed">
+                        Enjoy the Beauty and Fragrance of Fresh Flowers. Order Now and Get 25% Off on Your First Order That Contains More Than 3 Fresh Flowers.
+                    </p>
+                    <button class="bg-gradient-to-r from-pink-500 to-orange-500 text-white px-10 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition transform hover:scale-105">
+                        <i class="fas fa-shopping-bag mr-2"></i>
+                        Shop Now
+                    </button>
+                </div>
+                
+                <!-- Image - Mobile: Top, Desktop: Right -->
+                <div class="w-full lg:w-1/2 mb-12 lg:mb-0 order-1 lg:order-2">
+                    <div class="relative">
+                        <img src="assets/hero-flower.png" 
+                             alt="Fresh Beautiful Flowers" 
+                             class="w-full h-96 lg:h-[500px] object-cover rounded-3xl  ">
+                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 text-2xl mr-2"></i>
+                                <div>
+                                    <p class="font-bold text-gray-800">4.9/5</p>
+                                    <p class="text-sm text-gray-600">2,000+ Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plants Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Title and Subtitle -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl my-orange font-bold  ">Our <span class='text-4xl lg:text-5xl font-bold text-gray-800 mb-6'>Plants</span></h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+                    Explore our collection with the variety and freshness of our best. Order Now and get a fresh variety of Flowers.
+                </p>
+            </div>
+            
+            <!-- Plants Grid -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Plant Card 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-all duration-300">
+                    <div class="relative">
+                        <img src="assets/lily1.jpg " 
+                             alt="Red Rose Bouquet" class="w-full h-48 lg:h-56 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                            Popular
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 text-center mb-2 text-lg">Lily Blossom</h3>
+                        <p class="  text-center font-bold text-xl mb-4">25 USD</p>
+                        <button class="w-full bg-orange text-white py-3 hover:shadow-lg transition transform hover:scale-105 font-medium">
+                            <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Plant Card 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-all duration-300">
+                    <div class="relative">
+                        <img src="assets/lily3.jpg" 
+                             alt="Mixed Flower Arrangement" class="w-full h-48 lg:h-56 object-cover">
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                            Fresh
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 text-center mb-2 text-lg">Lily Blossom</h3>
+                        <p class="  text-center font-bold text-xl mb-4">25 USD</p>
+                        <button class="w-full bg-orange text-white py-3 hover:shadow-lg transition transform hover:scale-105 font-medium">
+                            <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Plant Card 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-all duration-300">
+                    <div class="relative">
+                        <img src="assets/lily4.jpg" 
+                             alt="Sunflower Bouquet" class="w-full h-48 lg:h-56 object-cover">
+                        <div class="absolute top-4 right-4 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                            Bright
+                        </div>
+                    </div>
+                   <div class="p-6">
+                        <h3 class="font-bold text-gray-800 text-center mb-2 text-lg">Lily Blossom</h3>
+                        <p class="  text-center font-bold text-xl mb-4">25 USD</p>
+                        <button class="w-full bg-orange text-white py-3 hover:shadow-lg transition transform hover:scale-105 font-medium">
+                            <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Plant Card 4 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-all duration-300">
+                    <div class="relative">
+                        <img src="assets/lily5.jpg" 
+                             alt="White Lily Arrangement" class="w-full h-48 lg:h-56 object-cover">
+                        <div class="absolute top-4 right-4 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                            Elegant
+                        </div>
+                    </div>
+                   <div class="p-6">
+                        <h3 class="font-bold text-gray-800 text-center mb-2 text-lg">Lily Blossom</h3>
+                        <p class="  text-center font-bold text-xl mb-4">25 USD</p>
+                        <button class="w-full bg-orange text-white py-3 hover:shadow-lg transition transform hover:scale-105 font-medium">
+                            <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Plant Card 5 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-all duration-300">
+                    <div class="relative">
+                        <img src="assets/lily6.jpg" 
+                             alt="Pink Peony Collection" class="w-full h-48 lg:h-56 object-cover">
+                        <div class="absolute top-4 right-4 bg-pink-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                            Romantic
+                        </div>
+                    </div>
+                   <div class="p-6">
+                        <h3 class="font-bold text-gray-800 text-center mb-2 text-lg">Lily Blossom</h3>
+                        <p class="  text-center font-bold text-xl mb-4">25 USD</p>
+                        <button class="w-full bg-orange text-white py-3 hover:shadow-lg transition transform hover:scale-105 font-medium">
+                            <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Plant Card 6 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-all duration-300">
+                    <div class="relative">
+                        <img src="assets/lily9.jpg" 
+                             alt="Forest Mix Bouquet" class="w-full h-48 lg:h-56 object-cover">
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                            Natural
+                        </div>
+                    </div>
+                   <div class="p-6">
+                        <h3 class="font-bold text-gray-800 text-center mb-2 text-lg">Lily Blossom</h3>
+                        <p class="  text-center font-bold text-xl mb-4">25 USD</p>
+                        <button class="w-full bg-orange text-white py-3 hover:shadow-lg transition transform hover:scale-105 font-medium">
+                            <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Plant Card 7 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-all duration-300">
+                    <div class="relative">
+                        <img src="assets/lily2.jpg" 
+                             alt="Nature Wild Flowers" class="w-full h-48 lg:h-56 object-cover">
+                        <div class="absolute top-4 right-4 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                            Wild
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 text-center mb-2 text-lg">Lily Blossom</h3>
+                        <p class="  text-center font-bold text-xl mb-4">25 USD</p>
+                        <button class="w-full bg-orange text-white py-3 hover:shadow-lg transition transform hover:scale-105 font-medium">
+                            <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Plant Card 8 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-all duration-300">
+                    <div class="relative">
+                        <img src="assets/lily7.jpg" 
+                             alt="Premium Orchid Collection" class="w-full h-48 lg:h-56 object-cover">
+                        <div class="absolute top-4 right-4 bg-indigo-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                            Premium
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 text-center mb-2 text-lg">Lily Blossom</h3>
+                        <p class="  text-center font-bold text-xl mb-4">25 USD</p>
+                        <button class="w-full bg-orange text-white py-3 hover:shadow-lg transition transform hover:scale-105 font-medium">
+                            <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plants Lover Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center">
+                <!-- Image with Badge - Mobile: Top, Desktop: Left -->
+                <div class="w-full lg:w-1/2 mb-12 lg:mb-0 order-1 lg:order-1 relative">
+                    <img src="assets/flower-store.png" 
+                         alt="Flower & Plants Lover" 
+                         class="w-full h-96 lg:h-[700px] object-cover rounded-3xl shadow-2xl">
+                    
+                    <!-- Trusted Badge - Hidden on mobile -->
+                    <div class="hidden lg:block absolute -top-32 -right-26 p-6 spin-animation">
+                        <div class="text-center">
+                            
+                            <div> <img src="assets/trusted-badge.png" class="w-[250px] mt-[0px]" alt=""></div>
+                             
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Content - Mobile: After image, Desktop: Right -->
+                <div class="w-full lg:w-1/2 text-center lg:text-left order-2 lg:order-2 lg:pl-16">
+                    <h2 class="text-4xl noto-serif lg:text-5xl font-sans font-bold text-gray-800 mb-34 leading-tight">
+                        Flower & Plants <br> Lover</span>
+                    </h2>
+                    <ul class="text-gray-600 text-lg space-y-6 max-w-md mx-auto lg:mx-0">
+                        <li class="flex items-start">
+                            
+                             <span >  <i class="fa-solid fa-circle text-sm  "></i>  Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.  </span>
+                             
+                        </li>
+
+                        <li class="flex items-start">
+                            
+                             <span >  <i class="fa-solid fa-circle text-sm  "></i>  Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.  </span>
+                             
+                        </li>
+                       <li class="flex items-start">
+                            
+                             <span >  <i class="fa-solid fa-circle text-sm  "></i>  Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.  </span>
+                             
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Latest Deals Section -->
+   
+
+    
+    <!-- Join Section -->
+    <section class="join">
+        <div class="container">
+            <h2 class="noto-serif font-semibold">Join the Colorful Bunch</h2>
+        
+            <form class="subscribe-form bg-white">
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo"> <img src="assets/logo.png" alt=""></div>
+                    <p class="text-[21px] text-gray-500">Indulge your senses with the  beauty and fragrance of our fresh flower shop. </p>
+                  
+                </div>
+                
+                <div class="footer-links">
+
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                   
+                    <ul>
+                        <li><a href="#"> Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Servics</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                
+                  <div class="social-icons text-3xl gap-4 ">
+                        <i class="fa-brands fa-linkedin" style="color: #58b3f9;"></i>
+                      <i class="fa-brands fa-twitter" style="color: #000000;"></i>
+                     <i class="fa-brands fa-facebook" style="color: #004cff;"></i>
+                     <i class="fa-brands fa-youtube" style="color: #fa0000;"></i>
+                    </div>
+                 
+            </div>
+            
+           
+        </div>
+    </footer>
+
+  
+</body>
+</html>
