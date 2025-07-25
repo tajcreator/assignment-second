@@ -64,31 +64,32 @@
         .bg-orange{
             background: rgb(233, 90, 8);
         }
-
-        /* join section */
+ 
           /* Join Section */
-        .join {
-            padding: 100px ;
-            background: linear-gradient(rgba(129, 128, 128, 0.5), rgba(66, 63, 63, 0.396)), url(assets/news-letter-bg.png);
+         .join {
+            padding: 190px 20px;
+            background: linear-gradient(rgba(47, 44, 44, 0.549), rgba(65, 110, 137, 0.052)), url(assets/news-letter-bg.png);
             background-size: cover;
             background-position: center;
-            color: var(--white);
+            color: white;
             text-align: center;
         }
         
         .join h2 {
-            font-size: 4rem;
+            font-size: 3rem;
             margin-bottom: 20px;
             color: #ffffff;
             text-align: center;
+            line-height: 1.2;
+            font-weight: bold;
         }
-        
-   
         
         .subscribe-form {
             display: flex;
-            max-width: 500px;
+            max-width: 900px;
             margin: 0 auto;
+            background-color: #ffffff;
+            color: black;
         }
         
         .subscribe-form input {
@@ -101,45 +102,55 @@
         
         .subscribe-form button {
             padding: 15px 30px;
-            background:  rgb(233, 90, 8);
-            
+            background: rgb(233, 90, 8);
+            color: white;
             border: none;
             border-radius: 0 5px 5px 0;
             cursor: pointer;
             font-size: 1rem;
-            transition: background 0.3s ease;
+            transition: all 0.3s ease;
         }
         
         .subscribe-form button:hover {
             background: rgb(86, 88, 82);
-          color: rgb(237, 36, 255);
+            color: rgb(237, 36, 255);
         }
 
-         @media (max-width: 576px) {
-            .plants-grid {
-                grid-template-columns: 1fr;
+        @media (max-width: 768px) {
+            .join {
+                padding: 80px 20px;
+            }
+            
+            .join h2 {
+                font-size: 2rem;
+                width: 100%;
+                margin-left: 0;
+                padding: 0 15px;
             }
             
             .subscribe-form {
                 flex-direction: column;
+                align-items: center;
+                width: 100%;
             }
             
             .subscribe-form input {
+                width: 100%;
                 border-radius: 5px;
                 margin-bottom: 10px;
             }
             
-            
-
             .subscribe-form button {
+                width: 100%;
                 border-radius: 5px;
-            } }
+            }
+        }
 
-             @media (max-width: 768px){
-                 .join h2{
-                    font-size: 2rem;
-                 }
-             }
+        @media (max-width: 576px) {
+            .join h2 {
+                font-size: 1.7rem;
+            }
+        }
 
          /* Footer Styles */
         .footer {
@@ -177,8 +188,11 @@
         
         .footer-links ul {
             list-style: none;
+            
         }
         
+        
+
         .footer-links ul li {
             margin-bottom: 10px;
         }
